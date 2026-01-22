@@ -1,63 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta
-      name="viewport"
-      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="./global/css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
-    <link href="./global/css/font.css" type="text/css" rel="stylesheet" />
-    <link href="./global/css/global.css" type="text/css" rel="stylesheet" />
-    <link href="css/main.css" type="text/css" rel="stylesheet" />
-    <script src="https://yuemia.oss-cn-shanghai.aliyuncs.com/dataproduct/buried-data/medbp-web.min.js"></script>
-  </head>
 
-  <body>
-    <div id="container" class="bg">
-      <div id="main-container">
-        <!--start: content-->
-        <h1 class="main-title po green">Lorem Ipsum is simply dummy text of the printing</h1>
+<head>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="./global/css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+  <link href="./global/css/font.css" type="text/css" rel="stylesheet" />
+  <link href="./global/css/global.css" type="text/css" rel="stylesheet" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+  <script src="https://yuemia.oss-cn-shanghai.aliyuncs.com/dataproduct/buried-data/medbp-web.min.js"></script>
+</head>
 
-        <!--end: content-->
+<body>
+  <div id="container" class="bg">
+    <div id="main-container">
+      <!--start: content-->
+      <div class="ghost "></div>
+
+      <div class="title bold green po">Lorem Ipsum is simply dummy text of the printing and typesetting <br>
+        industry. Lorem Ipsum has been the industry's standard dummy text ever<br>
+        since the 1500s</div>
+
+      <div class="chart-title regular green po">
+        Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+        industry. Lorem Ipsum has been the industry’s standard
       </div>
-      <!--end: #main-container-->
+      <div class="chart">
+        <div class="side-text po regular green">
+          Lorem Ipsum has been the industry's <br>
+          standard dummy text
+        </div>
 
-      <!-- nav-bar -->
-      <div id="menu" class="po">
-        <div class="icon po">
-          <div class="logo-crux"></div>
-          <div class="bg-icon"><div class="icon-home active"></div></div>
-          <div class="bg-icon"><div id="ref" class="icon-ref"></div></div>
-          <div class="bg-icon"><div class="icon-sitemap"></div></div>
+        <div class="y-axis green po">
+          <div class="lbl ">80</div>
+          <div class="lbl ">70</div>
+          <div class="lbl ">60</div>
+          <div class="lbl ">50</div>
+          <div class="lbl ">40</div>
+          <div class="lbl ">30</div>
+          <div class="lbl ">20</div>
+          <div class="lbl ">10</div>
+          <div class="lbl ">0</div>
+        </div>
+
+        <div class="x-axis green po">
+          <div class="lbl-x ">1 Lorem</div>
+          <div class="lbl-x ">2 Lorem</div>
+          <div class="lbl-x ">3 Lorem</div>
+          <div class="lbl-x ">4 Lorem</div>
+          <div class="lbl-x ">5 Lorem</div>
+        </div>
+
+        <div class="chart-line po"></div>
+
+        <div class="col-group po white">
+          <div class=" group-1 po">
+            <div class="bar bar-green1 "><span class="val ">70%</span></div>
+            <div class="bar bar-grey1 "><span class="val ">38%</span></div>
+          </div>
+
+          <div class="group-2 po">
+            <div class="bar bar-green2 "><span class="val ">50%</span></div>
+            <div class="bar bar-grey2 "><span class="val ">62%</span></div>
+          </div>
+
+          <div class=" group-3 po">
+            <div class="bar bar-green3 "><span class="val ">54%</span></div>
+            <div class="bar bar-grey3 "><span class="val ">34%</span></div>
+          </div>
+
+
+          <div class=" group-4 po">
+            <div class="bar bar-green4 "><span class="val ">42%</span></div>
+            <div class="bar bar-grey4 "><span class="val ">48%</span></div>
+          </div>
+
+          <div class=" group-5 po">
+            <div class="bar bar-green5 "><span class="val ">68%</span></div>
+            <div class="bar bar-grey5 "><span class="val ">43%</span></div>
+          </div>
+        </div>
+
+        <div class="legend-box po">
+          <div class="legend-item">
+            <div class="icon-box grey-grad"></div>
+            <div class="txt green">ipsum</div>
+          </div>
+          <div class="legend-item">
+            <div class="icon-box green-grad"></div>
+            <div class="txt green">ipsum</div>
+          </div>
+        </div>
+
+        <div class="chart-des po green">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry’s<br>
+          standard dummy text ever since the 1500s
         </div>
       </div>
+      <!--end: content-->
+    </div>
+    <!--end: #main-container-->
 
-      <!-- pu-ref-here -->
-      <div class="ref-container">
-        <div class="ref-content">
-            <div class="title po green">Tài liệu tham khảo</div>
-            <ul>
-              <li>Behrman 2007</li>
-            </ul>
-            <div class="ref-close"></div>
+    <!-- nav-bar -->
+    <div id="menu" class="po">
+      <div class="icon po">
+        <div class="logo-crux"></div>
+        <div class="bg-icon">
+          <div class="icon-home active"></div>
+        </div>
+        <div class="bg-icon">
+          <div id="ref" class="icon-ref"></div>
+        </div>
+        <div class="bg-icon">
+          <div class="icon-sitemap"></div>
         </div>
       </div>
     </div>
-    <!--End: #container-->
+  </div>
+  <!--End: #container-->
 
-    <script
-      src="./global/js/jquery.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <script src="./global/js/jquery.mobile-1.4.5.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./global/js/jquery.ui.touch-punch.min.js"></script>
-    <script src="./global/js/iscroll.js"></script>
-    <script src="./global/js/veeva-library.js"></script>
-    <script src="./global/js/global.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="./global/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./global/js/jquery.mobile-1.4.5.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./global/js/jquery.ui.touch-punch.min.js"></script>
+  <script src="./global/js/iscroll.js"></script>
+  <script src="./global/js/veeva-library.js"></script>
+  <script src="./global/js/global.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
