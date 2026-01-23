@@ -1,0 +1,256 @@
+.title {
+    font-size: 3.359375vh;
+    /*(60/1280*100)*/
+    top: 3.7vw;
+    left: 12.6vh;
+    line-height: 1.2;
+}
+
+.chart-title {
+    font-size: 2.5vh;
+    top: 16.1vw;
+    left: 33.9vh;
+    line-height: 1.18;
+    letter-spacing: -0.019vw;
+    text-align: center;
+}
+
+.chart-line {
+    width: 64vw;
+    aspect-ratio: 2550/941;
+    z-index: 11;
+    background: url(../images/chart.png ) no-repeat center center / contain;
+    top: 21.4vw;
+    left: 22.3vh;
+}
+
+.side-text {
+    font-size: 1.71vh;
+    line-height: 1.18;
+    transform: rotate(-90deg);
+    text-align: center;
+    top: 47.7vh;
+    left: 0.1vw;
+}
+
+.y-axis {
+    font-size: 1.76vh;
+    line-height: 2.46;
+    text-align: center;
+    top: 30.7vh;
+    left: 12.6vw;
+}
+
+.x-axis {
+    display: flex;
+    gap: 10vh;
+    top: 68.4vh;
+    left: 22.8vw;
+    font-size: 1.71vh;
+}
+
+.grey-grad {
+    width: 1.6vw;
+    height: 6vh;
+    aspect-ratio: 1;
+    z-index: 12;
+    background: url(../images/icon-grey.png ) no-repeat center center / contain;
+}
+
+.green-grad {
+    width: 1.6vw;
+    height: 6vh;
+    aspect-ratio: 1;
+    z-index: 13;
+    background: url(../images/icon-green.png ) no-repeat center center / contain;
+}
+
+.legend-box {
+    font-size: 1.71vh;
+    line-height: 3.839;
+    top: 56.6vh;
+    left: 81.4vw;
+}
+
+.legend-item {
+    display: flex;
+    gap: 3vh;
+}
+
+.chart-des {
+    font-size: 1.71vh;
+    line-height: 1.2;
+    top: 73.1vh;
+    left: 18.2vw;
+    text-align: center;
+    letter-spacing: -0.008vh;
+}
+
+.bar {
+    width: 4.15vw;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.71vh;
+}
+
+.bar-green1 {
+    aspect-ratio: 163/822;
+    background: url(../images/green-col70.png ) no-repeat center center / contain;
+}
+
+.bar-grey1 {
+    aspect-ratio: 163/445;
+    background: url(../images/grey-col38.png ) no-repeat center center / contain;
+}
+
+.bar-green2 {
+    aspect-ratio: 163/586;
+    background: url(../images/green-col50.png ) no-repeat center center / contain;
+}
+
+.bar-grey2 {
+    aspect-ratio: 163/729;
+    background: url(../images/grey-col62.png ) no-repeat center center / contain;
+}
+
+.bar-green3 {
+    aspect-ratio: 163/636;
+    background: url(../images/green-col54.png ) no-repeat center center / contain;
+}
+
+.bar-grey3 {
+    aspect-ratio: 163/402;
+    background: url(../images/grey-col34.png ) no-repeat center center / contain;
+}
+
+.bar-green4 {
+    aspect-ratio: 163/481;
+    background: url(../images/green-col42.png ) no-repeat center center / contain;
+}
+
+.bar-grey4 {
+    aspect-ratio: 163/562;
+    background: url(../images/grey-col48.png ) no-repeat center center / contain;
+}
+
+.bar-green5 {
+    aspect-ratio: 163/693;
+    background: url(../images/green-col68.png ) no-repeat center center / contain;
+}
+
+.bar-grey5 {
+    aspect-ratio: 163/527;
+    background: url(../images/grey-col43.png ) no-repeat center center / contain;
+}
+
+.group-1 {
+    display: flex;
+    align-items: flex-end;
+    top: 36vh;
+    gap: 0.34vw;
+    left: 20.3vw;
+}
+
+.group-2 {
+    display: flex;
+    align-items: flex-end;
+    top: 39.6vh;
+    gap: 0.34vw;
+    left: 31.3vw;
+}
+
+.group-3 {
+    display: flex;
+    align-items: flex-end;
+    top: 43.1vh;
+    gap: 0.34vw;
+    left: 42.3vw;
+}
+
+.group-4 {
+    display: flex;
+    align-items: flex-end;
+    top: 46.1vh;
+    gap: 0.34vw;
+    left: 53.3vw;
+}
+
+.group-5 {
+    display: flex;
+    align-items: flex-end;
+    top: 41vh;
+    gap: 0.34vw;
+    left: 64.3vw;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+@keyframes grow-up {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+.anim-bar {
+    transform-origin: bottom;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.anim-bar.show {
+    animation: grow-up 0.8s ease-out forwards;
+}
+
+.d-1 {
+    animation-delay: 0.1s;
+}
+
+.d-2 {
+    animation-delay: 0.2s;
+}
+
+.d-3 {
+    animation-delay: 0.3s;
+}
+
+.d-4 {
+    animation-delay: 0.4s;
+}
+
+.d-5 {
+    animation-delay: 0.5s;
+}
+
+.d-6 {
+    animation-delay: 0.6s;
+}
+
+.d-7 {
+    animation-delay: 0.7s;
+}
+
+.d-8 {
+    animation-delay: 0.8s;
+}
+
+.d-9 {
+    animation-delay: 0.9s;
+}
+
+.d-10 {
+    animation-delay: 1s;
+}
