@@ -66,18 +66,23 @@
 }
 
 .chart-x-line {
+    position: absolute;
     left: 14.7vw;
     bottom: 32.5vh;
     width: 40vw;
     height: 0.2vh;
+     background: rgba(0, 0, 0, 0.35);
+     z-index: 20;
 }
 
 .chart-x {
+    position: absolute;
     left: 57vw;
     bottom: 32.5vh;
     width: 14.2vw;
     height: 0.2vh;
     background: rgba(0, 0, 0, 0.35);
+     z-index: 20;
 }
 
 .chart-y {
@@ -86,6 +91,7 @@
     width: 0.2vh;
     height: 35.4vh;
     background: rgba(0, 0, 0, 0.35);
+     z-index: 20;
 
 }
 
@@ -245,11 +251,11 @@
   text-align: center;
 
   font-size: 1.1vw;
-  color: #b7cbbd;
   font-weight: 500;
 }
 
 
 .ref-container {
+    position: absolute;
   z-index: 40;
 }
