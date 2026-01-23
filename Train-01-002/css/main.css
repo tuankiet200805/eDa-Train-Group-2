@@ -1,0 +1,255 @@
+/* .ghost {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+    z-index: 10;
+    position: absolute;
+    background: url(../thumb.png) no-repeat center center / contain;
+} */
+
+.title {
+    top: 5.6vh;
+    left: 8.3vw;
+    font-size: 2.25vw;
+    line-height: 1.2;
+}
+
+.title-sup {
+    font-size: 1.3vw;
+    position: relative;
+    top: -1.2vh;
+}
+
+.sub-title {
+    top: 22.6vh;
+    left: 21vw;
+    font-size: 1.66vw;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.y-title {
+    left: 8.33vw;
+    top: 62vh;
+    font-size: 1.15vw;
+    line-height: 1.2;
+    text-align: center;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    white-space: nowrap;
+}
+
+.info-wrap {
+    top: 45.5vh;
+    left: 73.5vw;
+    width: 18vw;
+    height: 16.36vh;
+    border-radius: 1.5vw;
+    background: linear-gradient(to right, #0f3f26 0%, #2f7f66 60%, #6ecbd8 100%);
+}
+
+.info-box {
+    width: 100%;
+    height: 100%;
+    padding: 2.6vh 1vw;
+    font-size: 1.27vw;
+    line-height: 1.2;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.lorem {
+    left: 31.2vw;
+    top: 74.2vh;
+    font-size: 1.2vw;
+}
+
+.chart-x-line {
+    left: 14.7vw;
+    bottom: 32.5vh;
+    width: 40vw;
+    height: 0.2vh;
+}
+
+.chart-x {
+    left: 57vw;
+    bottom: 32.5vh;
+    width: 14.2vw;
+    height: 0.2vh;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.chart-y {
+    left: 15.5vw;
+    bottom: 32.5vh;
+    width: 0.2vh;
+    height: 35.4vh;
+    background: rgba(0, 0, 0, 0.35);
+
+}
+
+.y-axis-ticks {
+    left: 15vw;
+    bottom: 42vh;
+    width: 1.4vw;
+    height: 26vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.y-axis-ticks span {
+    width: 0.6vw;
+    height: 0.2vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.y-axis-labels {
+    left: 12.4vw;
+    bottom: 31.4vh;
+    width: 1.4vw;
+    height: 38vh;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.y-axis-labels span {
+    font-size: 1.9vh;
+}
+
+#menu .icon {
+    position: absolute;
+    bottom: 3.7vh;
+    left: 9.6vw;
+    display: flex;
+    align-items: center;
+    gap: 0vw;
+    transform: scale(0.97);
+    transform-origin: left bottom;
+  z-index: 20;
+
+}
+
+#menu .icon > * {
+  margin-left: -1vw;
+}
+
+.chart-cols {
+    position: absolute;
+    left: 18.9vw;
+    bottom: 32.5vh;
+    width: 55vw;
+    height: 45vh;
+    display: flex;
+    align-items: flex-end;
+    gap: 2vw;
+}
+
+.chart-col {
+  position: relative;
+  width: 4.8vw;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.col-bar {
+  position: relative;
+  width: 100%;
+  height: 0;                   
+
+  background: linear-gradient(
+    to top,
+    #0f3f26 0%,
+    #2f7f66 60%,
+    #6ecbd8 100%
+  );
+
+  border-radius: 0.6vw 0.6vw 0 0;
+
+  transition: height 0.8s ease-out; 
+}
+
+.col-bar.show {
+  height: var(--h);             
+}
+
+
+.col-cap {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1.2vh;
+
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 0.6vw 0.6vw 0 0;
+}
+
+.col-value {
+  position: absolute;
+  bottom: 1vh;
+  width: 100%;
+
+  text-align: center;
+  font-size: 1.8vh;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.chart-cols--right {
+  position: absolute;
+  left: 57vw;          
+  bottom: 32.5vh;     
+
+  width: 14.2vw;      
+  height: 26vh;        
+
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.col-outline {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 26vh;             
+
+  border: 0.25vh solid #ffffff;
+  border-radius: 0.6vw 0.6vw 0 0;
+
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.chart-x-labels {
+  position: absolute;
+  left: 18.9vw;          
+  bottom: 29.5vh;       
+
+  width: 55vw;          
+  display: flex;
+  align-items: center;
+  gap: 2vw;              
+}
+
+.x-label {
+  width: 4.8vw;         
+  text-align: center;
+
+  font-size: 1.1vw;
+  color: #b7cbbd;
+  font-weight: 500;
+}
+
+
+.ref-container {
+  z-index: 40;
+}
