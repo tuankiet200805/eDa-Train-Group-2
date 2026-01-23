@@ -1,0 +1,88 @@
+.nav-item {
+    width: 16.15vw;
+    height: 31vh;
+    top: 12vh;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#nav-1 {
+    left: 4.69vw;
+}
+
+#nav-2 {
+    left: 23.44vw;
+}
+
+#nav-3 {
+    left: 42.19vw;
+}
+
+#nav-4 {
+    left: 60.94vw;
+}
+
+#nav-5 {
+    left: 79.69vw;
+}
+
+.nav-header {
+    width: 24vh;
+    height: 5vh;
+    top: -1vh;
+    left: 0;
+    background: url(../images/Asset.png) no-repeat center center;
+    background-size: 100% 100%;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-text {
+    font-size: 1.04vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-thumb {
+    width: 24vh;
+    height: 19.3vh;
+    top: 7.03vh;
+    left: 0;
+    background-size: 100% 100%;
+    border-radius: 0.8vw;
+    z-index: 1;
+}
+
+#nav-1 .nav-thumb {
+    background-image: url(../images/slide-1.png);
+}
+
+#nav-2 .nav-thumb {
+    background-image: url(../images/slide-2.png);
+}
+
+#nav-3 .nav-thumb {
+    background-image: url(../images/slide-3.png);
+}
+
+#nav-4 .nav-thumb {
+    background-image: url(../images/slide-4.png);
+}
+
+#nav-5 .nav-thumb {
+    background-image: url(../images/slide-5.png);
+}
+
+.ani {
+    opacity: 0;
+    transform: translateY(4vh);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ani.show {
+    opacity: 1;
+    transform: translateY(0);
+}
