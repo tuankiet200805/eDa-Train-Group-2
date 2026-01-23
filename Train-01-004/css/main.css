@@ -1,12 +1,3 @@
-.ghost {
-    width: 100vw;
-    height: 100vh;
-    opacity: 0.5;
-    z-index: 10;
-    position: absolute;
-    background: url(../thumb.png) no-repeat center center / contain;
-}
-
 .title {
     font-size: 3.359375vh;
     /*(60/1280*100)*/
@@ -28,7 +19,6 @@
     width: 64vw;
     aspect-ratio: 2550/941;
     z-index: 11;
-
     background: url(../images/chart.png ) no-repeat center center / contain;
     top: 21.4vw;
     left: 22.3vh;
@@ -97,8 +87,12 @@
 }
 
 .bar {
-    width: 4.489vw;
-    z-index: 0;
+    width: 4.15vw;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.71vh;
 }
 
 .bar-green1 {
@@ -147,14 +141,14 @@
 }
 
 .bar-grey5 {
-    aspect-ratio: 163/402;
-    background: url(../images/grey-col34.png ) no-repeat center center / contain;
+    aspect-ratio: 163/527;
+    background: url(../images/grey-col43.png ) no-repeat center center / contain;
 }
 
 .group-1 {
     display: flex;
     align-items: flex-end;
-    top: 33.4vh;
+    top: 36vh;
     gap: 0.34vw;
     left: 20.3vw;
 }
@@ -162,7 +156,7 @@
 .group-2 {
     display: flex;
     align-items: flex-end;
-    top: 37.4vh;
+    top: 39.6vh;
     gap: 0.34vw;
     left: 31.3vw;
 }
@@ -170,7 +164,7 @@
 .group-3 {
     display: flex;
     align-items: flex-end;
-    top: 41.1vh;
+    top: 43.1vh;
     gap: 0.34vw;
     left: 42.3vw;
 }
@@ -178,7 +172,7 @@
 .group-4 {
     display: flex;
     align-items: flex-end;
-    top: 44.1vh;
+    top: 46.1vh;
     gap: 0.34vw;
     left: 53.3vw;
 }
@@ -186,11 +180,77 @@
 .group-5 {
     display: flex;
     align-items: flex-end;
-    top: 38.7vh;
+    top: 41vh;
     gap: 0.34vw;
     left: 64.3vw;
 }
 
 .hide {
     opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+@keyframes grow-up {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+.anim-bar {
+    transform-origin: bottom;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.anim-bar.show {
+    animation: grow-up 0.8s ease-out forwards;
+}
+
+.d-1 {
+    animation-delay: 0.1s;
+}
+
+.d-2 {
+    animation-delay: 0.2s;
+}
+
+.d-3 {
+    animation-delay: 0.3s;
+}
+
+.d-4 {
+    animation-delay: 0.4s;
+}
+
+.d-5 {
+    animation-delay: 0.5s;
+}
+
+.d-6 {
+    animation-delay: 0.6s;
+}
+
+.d-7 {
+    animation-delay: 0.7s;
+}
+
+.d-8 {
+    animation-delay: 0.8s;
+}
+
+.d-9 {
+    animation-delay: 0.9s;
+}
+
+.d-10 {
+    animation-delay: 1s;
 }

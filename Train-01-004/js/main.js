@@ -1,13 +1,18 @@
 $(document).ready(function () {
     // setting slide
-    currentSlide = "001";
+    currentSlide = "004";
     localStorage.setItem('current-slide', currentSlide);
     disableSwipe = false;
 
     //animation, if have serveral class with the same time appear, delcare in an array
     const animations = {
-        300: [".class1", ".hello"],
-        500: [".class2"],
+        300: [".title"],
+        500: [".chart-title"],
+        700: [".chart", ".chart-des"],
+        900: [".y-axis"],
+        950: [".x-axis"],
+        1000: [".anim-bar",".col-group"],
+        1600: [".legend-box"],        
     };
 
     for (const [offset, elem] of Object.entries(animations)) {
