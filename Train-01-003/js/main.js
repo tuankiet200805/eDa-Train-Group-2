@@ -38,13 +38,12 @@ $(document).ready(function () {
         "button, input, select, textarea, .noSwipe, .btn-toggle",
       allowPageScroll: "vertical",
     });
-  } else {
-    var el = document.getElementById("container");
-    if (el && typeof swipedetect === "function") {
-      swipedetect(el, function (swipedir) {
-        if (swipedir == "left") window.goToSlide("004");
-        if (swipedir == "right") window.goToSlide("002");
-      });
-    }
+  }
+  var el = document.getElementById("container");
+  if (el && typeof swipedetect === "function") {
+    swipedetect(el, function (swipedir) {
+      if (swipedir == "left") window.goToSlide("004");
+      if (swipedir == "right") window.goToSlide("002");
+    });
   }
 });
