@@ -18,7 +18,7 @@ Về animation:
         trồi lên: với những chart - column dạng cột
         trái qua hoặc phải qua: với những chart - row dạng đường hoặc biểu đồ ngang
     Kết hợp với transition để mượt mà
-    Cách làm animtion đã chỉ rồi, m.n thống nhất sử dụng 1 kiểu( Ai không hiểu thì inbox PM để nó chỉ, có nó siêng mới chỉ thôi :)) )
+    Cách làm animtion đã chỉ rồi, m.n thống nhất sử dụng 1 kiểu( Ai không hiểu thì inbox PM để nó chỉ, có nó siêng mới chỉ thôi :)
     Không nhất thiết thành phần nào cũng animation, header cũng như những shadow không cần làm cũng được
     Cho animation chạy bắt đầu từ 0.1 (100ms) tính từ lúc chạy, vì màn hình phải load, khoảng cách giữa mỗi lần hiển thị không quá lớn.
 
