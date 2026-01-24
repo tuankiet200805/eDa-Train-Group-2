@@ -20,6 +20,7 @@ $(document).ready(function () {
             window.goToSlide("003");
         }
         if (swipedir == 'right') {
+            window.goToSlide("001");
         }
     });
 });
