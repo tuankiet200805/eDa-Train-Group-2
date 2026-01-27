@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     //animation, if have serveral class with the same time appear, delcare in an array
     const animations = {
-        300: [".title"],
+        100: [".title"],
         500: [".chart-title"],
         700: [".chart", ".chart-des"],
         900: [".y-axis"],
@@ -27,10 +27,10 @@ $(document).ready(function () {
     var el = document.getElementById('container');
     swipedetect(el, function (swipedir) {
         if (swipedir == 'left') {
-            window.goToSlide("003");
+            window.goToSlide("005");
         }
         if (swipedir == 'right') {
-            // disableSwipe = true;
+             window.goToSlide("003");
         }
     });
 });

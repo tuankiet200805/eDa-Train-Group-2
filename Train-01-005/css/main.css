@@ -1,0 +1,85 @@
+/* .ghost {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5; 
+    z-index:10;
+    position: absolute;
+    background: url(../thumb.png) no-repeat center center / contain;
+} */
+.happy-old {
+    width: 78.5vw;
+    height: 39vh;
+    top: 0;
+    left: 16vh;
+    background: url(../images/happy-old-couple-shape.png) no-repeat center top;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.col-item {
+    width: 26.04vw;
+    height: auto;
+    top: 45vh;
+    z-index: 5;
+}
+
+#col-1 {
+    left: 8.85vw;
+}
+
+#col-2 {
+    left: 36.98vw;
+}
+
+#col-3 {
+    left: 65.10vw;
+}
+
+
+.box-header {
+    width: 39vh;
+    height: 12.6vh;
+    background: url(../images/Asset.png) no-repeat center /contain;
+}
+
+.header-text {
+    font-size: 1.5vw;
+    text-align: center;
+    width: 100vh;
+    top: 4.5vh;
+    left: -31vh;
+    transform: translateY(-50%);
+    position: absolute;
+    line-height: 1.3;
+}
+
+.box-body {
+    width: 39vh;
+    height: 19.5vh;
+    top: 9.38vh;
+    left: 0;
+    background: #fff;
+    border: 0.15vw solid #5ebdc0;
+    border-top: none;
+    border-radius: 0 0 1vw 1vw;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.body-text {
+    font-size: 1.2vw;
+    padding: 2.34vh 1.5vw;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.ani {
+    opacity: 0;
+    transform: translateY(4vh);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.ani.show {
+    opacity: 1;
+    transform: translateY(0);
+}
