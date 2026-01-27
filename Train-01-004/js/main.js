@@ -11,8 +11,12 @@ $(document).ready(function () {
         700: [".chart", ".chart-des"],
         900: [".y-axis"],
         950: [".x-axis"],
-        1000: [".anim-bar",".col-group"],
-        1600: [".legend-box"],        
+        1000: [".anim-bar", ".group-1"],
+        1250: [".group-2"],
+        1400: [".group-3"],
+        1550: [".group-4"],
+        1700: [".group-5"],
+        1800: [".legend-box"],
     };
 
     for (const [offset, elem] of Object.entries(animations)) {
