@@ -37,21 +37,25 @@
 }
 
 .content-box {
-    width: 27.6vw;
+    width: 27.25vw;
     height: 16.41vh;
-    background: url(../images/rectangle.png) no-repeat center center;
-    top: 13vh;
+    background: url(../global/images/pu/bg.png) no-repeat center center;
+    top: 10vh;
     left: 0;
     z-index: 4;
     opacity: 0;
     transform: translateY(-2vh);
     transition: opacity 0.5s ease, transform 0.5s ease;
     pointer-events: none;
+    border-radius: 4vh;
+    border-style: solid;
+    border-color: rgb(20, 117, 91);
+
 }
 
 .content-box .box-text {
     font-size: 1.1vw;
-    padding: 3vh 2vw 0 2vw;
+    padding: 6vh 2vw 0 2vw;
     text-align: justify;
 }
 
@@ -59,19 +63,23 @@
     width: 3vw;
     height: 4.5vh;
     background: url(../images/shape.png) no-repeat center center;
+    background-size: 100% 100%;
     border-radius: 50%;
     top: -1.5vh;
     right: 2vw;
     cursor: pointer;
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .btn-toggle::before {
     content: 'i';
     color: #fff;
-    padding-left: 1.5vh;
     font-size: 2vw;
+    line-height: 1;
 }
 
 .item-group.active .content-box {
